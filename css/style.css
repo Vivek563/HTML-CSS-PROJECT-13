@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-color: #542795;
+} */
+.container{
+    background-color: #542795;
+    height: 120vh;
+}
+
+.navbar{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 20px;
+}
+.list{
+    display: flex;
+    align-content: space-between;
+    gap: 60px;
+    margin-left: 30rem;
+    align-items: center;
+}
+.list-item{
+font-size: 1.3rem;
+color: #ffffff;
+list-style: none;
+}
+.list :nth-child(1){
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: blue;
+}
+.list button{
+    padding: 17px 40px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #5ba0e0;
+    border: #542795;
+}
+
+.homepage{
+    display: flex;
+    align-content: center;
+    margin-left: 30px;
+    align-items: center;
+}
+.img{
+    width: 50%;
+    margin-left: 50px;
+}
+.text h1{
+    font-size: 5.5rem;
+    margin-left: 80px;
+    color: #ffffff;
+}
+.text h2{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 80px;
+    font-weight: 100;
+    line-height: 30px;
+    margin-top: 40px;
+}
+/* .........second section........ */
+
+.second-section{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 7rem;
+    align-content: center;
+}
+.second-section img{
+    width: 50%;
+}
+.operating{
+    display: flex;
+    flex-direction: column;
+}
+.operating h1{
+    font-size: 2.9rem;
+}
+
+.operating .fast{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.fast h2{
+    font-size: 1.9rem;
+}
+.fast h3{
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 100;
+
+}
+
+/* .....third section......... */
+.third-section{
+    height: 90vh;
+}
+.third-section h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+/* .........card........... */
+
+.customer {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.customer h2 {
+    margin-bottom: 40px;
+}
+.customer .customer-cards {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.customer .customer-cards .icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245,56,6, .2);
+    margin: 40px auto 30px auto;
+    border-radius: 500px;
+}
+.customer .customer-cards .icon.analytics {
+    background-color: rgba(255, 193, 58, 0.2);
+}
+.customer .customer-cards .icon.profile {
+    background-color: rgba(101, 255, 58, 0.2);
+}
+.customer .customer-cards .icon.profile img {
+    width: 60px;
+}
+.customer .customer-cards .icon.support {
+    background-color: rgba(235, 58, 255, 0.2);
+}
+.customer .customer-cards .icon.support img {
+    width: 50px;
+}
+.customer .customer-cards .icon.code img {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+
+}
+.customer .customer-cards .card {
+    max-width: 13rem;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 260px;
+}
+.customer .customer-cards .card:first-child .info {
+    background-color: #542795;
+    color: #ffffff;
+}
+.customer .customer-cards .card .info {
+    border-radius: 10px;
+    height: 100%;
+    padding: 4px 10px;
+}
+.customer .customer-cards .card .info h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+.customer .customer-cards .card .info p {
+    font-size: 13px;
+    margin-top: 4px;
+}
