@@ -1,116 +1,225 @@
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
     padding: 0;
-}
-/* body{
-    background-color: #542795;
-} */
-.container{
-    background-color: #542795;
-    height: 120vh;
+    margin: 0;
 }
 
-.navbar{
+:root {
+    --primary: #5ba0e0;
+    --secondary: #542795;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.bg {
+    background-image: url("../assets/bg.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+/*----------------------- navbar --------------------------*/
+.navbar {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    height: 20vh;
     align-items: center;
 }
-.logo{
-    margin: 20px;
+.navbar .logo img {
+    width: 100px;
 }
-.list{
+.navbar .mobile-list {
+    display: none;
+}
+.navbar .list {
+    list-style-type: none;
     display: flex;
-    align-content: space-between;
-    gap: 60px;
-    margin-left: 30rem;
+    gap: 50px;
+    color: #FFFFFF;
+    font-weight: lighter;
     align-items: center;
 }
-.list-item{
-font-size: 1.3rem;
-color: #ffffff;
-list-style: none;
+.navbar .list-item:last-child button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 14px 30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-radius: 4px;
 }
-.list :nth-child(1){
-    font-size: 1.6rem;
-    text-decoration: underline;
-    color: blue;
+.navbar .hamburger {
+    display: none;
 }
-.list button{
-    padding: 17px 40px;
+
+@media only screen and (max-width: 774px) {
+    .show-navbar {
+        display: flex !important;
+    }
+    .navbar .hamburger {
+        display:block;
+        cursor: pointer;
+    }
+    .navbar .list {
+        display: none;
+    }
+    .navbar {
+        position: relative;
+        padding: 0 20px;
+        height: 14vh;
+    }
+    .navbar .mobile-list {
+        align-items: center;
+        width: 100%;
+        background-color: var(--secondary);
+        gap: 20px;
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        color: #FFFFFF;
+        padding: 20px 0px;
+        position: absolute;
+        top: 80px;       
+        left: 0;
+        right: 0; 
+        border-radius: 10px;
+    }
+}
+
+
+/*------------------------- hero section -----------------------*/
+
+.hero {
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+}
+.hero .hero-left h1 {
+    color: var(--white);
+    font-size: 3.4rem;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.hero .hero-left p {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+}
+.hero .hero-left button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 14px 30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 40px;
     cursor: pointer;
-    color: #ffffff;
-    background-color: #5ba0e0;
-    border: #542795;
+}
+.hero .hero-right {
+    margin-top: -80px;
+}
+.hero .hero-right img {
+    width: 650px;
 }
 
-.homepage{
+@media only screen and (max-width: 1110px) {
+    .hero .hero-left h1 {
+        font-size: 2.4rem;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .hero .hero-left button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .hero .hero-right img {
+        width: 450px;
+    }
+} 
+@media only screen and (max-width: 815px) {
+    .hero .hero-right {
+        opacity: .2;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .hero {
+        justify-content: center;
+        margin-top: 120px;
+    }
+    .hero .hero-left  {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .hero .hero-left  {
+        padding: 0 20px;
+    }
+}
+
+
+/*--------------------- feature section -----------------------*/
+.features {
     display: flex;
-    align-content: center;
-    margin-left: 30px;
     align-items: center;
+    gap: 120px;
+    margin-top: 70px;
 }
-.img{
-    width: 50%;
-    margin-left: 50px;
+.features .feature-left img {
+    width: 500px;
 }
-.text h1{
-    font-size: 5.5rem;
-    margin-left: 80px;
-    color: #ffffff;
-}
-.text h2{
-    color: #ffffff;
+.features .feature-right h4 {
     font-size: 1.5rem;
-    margin-left: 80px;
-    font-weight: 100;
-    line-height: 30px;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
-/* .........second section........ */
-
-.second-section{
+.features .feature-right .list {
     display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-left: 7rem;
-    align-content: center;
-}
-.second-section img{
-    width: 50%;
-}
-.operating{
-    display: flex;
+    list-style-type: none;
+    gap: 22px;
     flex-direction: column;
 }
-.operating h1{
-    font-size: 2.9rem;
+.features .feature-right .list .list-item p {
+    font-size: 14px;
+}
+.features .feature-right .list .list-item h6 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
-.operating .fast{
-    margin-left: 50px;
-    margin-top: 40px;
+@media only screen and (max-width: 916px) {
+    .features {
+        gap: 20px;
+        justify-content: center;
+    }
+    .features .feature-left img {
+        width: 400px;
+    }
 }
-.fast h2{
-    font-size: 1.9rem;
-}
-.fast h3{
-    margin-top: 20px;
-    line-height: 30px;
-    font-weight: 100;
-
-}
-
-/* .....third section......... */
-.third-section{
-    height: 90vh;
-}
-.third-section h1{
-    text-align: center;
-    margin-top: 5rem;
-    font-size: 3rem;
+@media only screen and (max-width: 700px) {
+    .features {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .features .feature-left img {
+        width: 400px;
+    }
 }
 
-/* .........card........... */
+/*------------------------ customer section --------------------*/
 
 .customer {
     text-align: center;
@@ -165,8 +274,8 @@ list-style: none;
     height: 260px;
 }
 .customer .customer-cards .card:first-child .info {
-    background-color: #542795;
-    color: #ffffff;
+    background-color: var(--secondary);
+    color: var(--white);
 }
 .customer .customer-cards .card .info {
     border-radius: 10px;
@@ -180,4 +289,10 @@ list-style: none;
 .customer .customer-cards .card .info p {
     font-size: 13px;
     margin-top: 4px;
+}
+
+@media only screen and (max-width: 700px) {
+    .customer .customer-cards {
+        flex-wrap: wrap;
+    }
 }

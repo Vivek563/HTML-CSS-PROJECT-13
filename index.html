@@ -1,135 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 13 | LCO</title>
-  </head>
-  <link rel="stylesheet" href="./css/style.css" />
-  <body>
-    <section class="container">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="./assest/Logo.png" alt="logo" />
-        </div>
-        <div class="nav-item">
-          <ul class="list">
-            <li class="list-item">Home</li>
-            <li class="list-item">Services</li>
-            <li class="list-item">Pricing</li>
-            <li class="list-item">Testimonials</li>
-            <li class="list-item">Blog</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SAAS Landing Page</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/Logo.png" alt="logo" />
+                </div>
+                <ul class="list">
+                    <li class="list-item">Home</li>
+                    <li class="list-item">Services</li>
+                    <li class="list-item">Pricing</li>
+                    <li class="list-item">Testimonials</li>
+                    <li class="list-item">Blog</li>
+                    <li class="list-item">
+                        <button>Free Trial</button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <svg viewBox="0 0 100 80" width="30" height="30">
+                        <rect fill="#FFFFFF" width="100" height="10"></rect>
+                        <rect
+                            fill="#FFFFFF"
+                            y="30"
+                            width="100"
+                            height="10"
+                        ></rect>
+                        <rect
+                            fill="#FFFFFF"
+                            y="60"
+                            width="100"
+                            height="10"
+                        ></rect>
+                    </svg>
+                </div>
+                <ul class="mobile-list">
+                    <li class="list-item">Home</li>
+                    <li class="list-item">Services</li>
+                    <li class="list-item">Pricing</li>
+                    <li class="list-item">Testimonials</li>
+                    <li class="list-item">Blog</li>
+                    <li class="list-item">
+                        <button>Free Trial</button>
+                    </li>
+                </ul>
+            </nav>
 
-            <button class="btn">Free Trial</button>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="homepage">
-        <div class="text">
-          <h1>Codext one of <br> the best system <br> in SAAS</h1>
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Sapiente
-            omnis corrupti itaque debitis alias libero <br> voluptas quasi, saepe
-            optio, odit, dolores natus.
-          </h2>
-        </div>
-        <div class="img">
-          <img src="./assest/30495 [Converted]-01(1).svg" alt="computerimage" />
-        </div>
-      </div>
-    </section>
-
-    <section class="second-section">
-        <img src="./assest/Saas illustration-01.svg" alt="saas">
-        <div class="operating">
-            <h1>It's helpful for operating <br> system</h1>
-
-           <div class="fast">
-            <h2>Ultra fast & Secure</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quaerat asperiores veniam soluta.</h3>
-           </div>
-
-           <div class="fast">
-            <h2>Allow customization</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quaerat asperiores veniam soluta.</h3>
-           </div>
-
-           <div class="fast">
-            <h2>Smart Contract</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quaerat asperiores veniam soluta.</h3>
-           </div>
-
-        </div>
-    </section>
-
-    <section class="customer">
-        <h2>
-            We Provide Best Feature <br />
-            for Customer
-        </h2>
-
-        <div class="customer-cards">
-            <!-- card-1 -->
-            <div class="card">
-                <div class="icon code">
+            <!-- hero-section -->
+            <section class="hero">
+                <div class="hero-left">
+                    <h1>
+                        Codext one of <br />
+                        the base system in SAAS
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo, dolorum quam ex consequatur excepturi fugiat ab
+                        magnam. Suscipit, minus necessitatibus?
+                    </p>
+                    <button>Try A Live Demo</button>
+                </div>
+                <div class="hero-right">
                     <img
-                        src="./assest/web-developing.svg"
-                        alt="webdev"
+                        src="./assets/30495 [Converted]-01(1).svg"
+                        alt="image"
                     />
                 </div>
-                <div class="info">
-                    <h4>Clean Code</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Culpa, molestias!
-                    </p>
+            </section>
+
+            <!-- features-section -->
+            <section class="features">
+                <div class="feature-left">
+                    <img src="./assets/Saas illustration-01.svg" alt="image" />
                 </div>
-            </div>
-            <!-- card-1 -->
-            <div class="card">
-                <div class="icon analytics">
-                    <img src="./assest/data-analytics.svg" alt="data" />
+                <div class="feature-right">
+                    <h4>
+                        It's helpfulfor operating <br />
+                        system
+                    </h4>
+                    <ul class="list">
+                        <li class="list-item">
+                            <h6>Ultrafast & secure</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br />
+                                adipisicing elit. Esse neque suscipit
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <h6>Allow Customization</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br />
+                                adipisicing elit. Esse neque suscipit
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <h6>Smart Contract</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur <br />
+                                adipisicing elit. Esse neque suscipit
+                            </p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="info">
-                    <h4>Data Analytics</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Culpa, molestias!
-                    </p>
+            </section>
+
+            <!-- customer section -->
+            <section class="customer">
+                <h2>
+                    We Provide Best Feature <br />
+                    for Customer
+                </h2>
+
+                <div class="customer-cards">
+                    <!-- card-1 -->
+                    <div class="card">
+                        <div class="icon code">
+                            <img
+                                src="./assets/web-developing.svg"
+                                alt="webdev"
+                            />
+                        </div>
+                        <div class="info">
+                            <h4>Clean Code</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Culpa, molestias!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="card">
+                        <div class="icon analytics">
+                            <img src="./assets/data-analytics.svg" alt="data" />
+                        </div>
+                        <div class="info">
+                            <h4>Data Analytics</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Culpa, molestias!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="card">
+                        <div class="icon profile">
+                            <img
+                                src="./assets/secured-profile.svg"
+                                alt="secure"
+                            />
+                        </div>
+                        <div class="info">
+                            <h4>Fully Secured</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Culpa, molestias!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="card">
+                        <div class="icon support">
+                            <img src="./assets/support.svg" alt="support" />
+                        </div>
+                        <div class="info">
+                            <h4>24/7 support</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Culpa, molestias!
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- card-1 -->
-            <div class="card">
-                <div class="icon profile">
-                    <img
-                        src="./assest/secured-profile.svg"
-                        alt="secure"
-                    />
-                </div>
-                <div class="info">
-                    <h4>Fully Secured</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Culpa, molestias!
-                    </p>
-                </div>
-            </div>
-            <!-- card-1 -->
-            <div class="card">
-                <div class="icon support">
-                    <img src="./assest/support.svg" alt="support" />
-                </div>
-                <div class="info">
-                    <h4>24/7 support</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Culpa, molestias!
-                    </p>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-  </body>
+
+    </body>
 </html>
